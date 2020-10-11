@@ -14,5 +14,7 @@ app.get('/', (req, res) => {
     })
 })
 
+app.use('/api/upload',require('./api/upload'));
+
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`App is running on port ${PORT}`));
